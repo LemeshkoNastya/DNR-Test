@@ -4,6 +4,10 @@
     &__content {
         max-width: 1280px;
         margin: 0 auto;
+
+        @include resolution(desktop) {
+            max-width: 85%;
+        }
         
         img {
             margin-top: 32px;
