@@ -170,6 +170,7 @@
     &__image {
         margin-top: 78px;
         margin-right: 103px;
+        animation: heart 1.2s infinite;
 
         @include resolution(desktop) {
             width: 300px;
@@ -195,3 +196,21 @@
         }
     }
 }
+
+@keyframes heart {
+    0% {
+      transform: scale(1);  
+    }
+    10% {
+      transform: scale(1.01);
+    } 
+    20% {
+      transform: scale(1.02);
+    }
+    30% {
+        transform: scale(1.06);
+    }
+    70% {
+        transform: scale(1.1);
+    }
+  }
