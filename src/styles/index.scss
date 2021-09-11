@@ -3,6 +3,9 @@
     z-index: 100;
 }
 
+@import "./components/fonts";
+@import "./components/mixins";
+
 // переменные
 // var(--color-blue); - пример для использования
 
@@ -16,6 +19,13 @@
     --main-font-size: 16px; // размер шрифта по умолчанию
     --color-grey: #a6a6a6;
     --color-orange: #FF7500;
+    --color-curious-blue: #19A3DC;
+    --color-mariner: #256EDC;
+    --color-sandy-brown: #F2A45C;
+    --color-macaroni-cheese: #FFBD86;
+    --color-flame-pea: #D76B30;
+    --color-tango: #E86B2E;
+    --color-mine-shaft-24: rgba(46, 46, 46, 0.24);
 }
 a {
     text-decoration: none !important;
@@ -107,3 +117,6 @@ p {
 ._1 {
     
 }
+
+@import "./components/header";
+@import "./components/main";

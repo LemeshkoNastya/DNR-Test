@@ -1,0 +1,72 @@
+.main-block {
+    height: 100vh;
+    background: linear-gradient(79.62deg, var(--color-curious-blue) 29.11%, var(--color-mariner) 88.06%);
+
+    &__content {
+        display: flex;
+    }
+
+    &__info {
+        margin-top: 128px;
+    }
+
+    &__title {
+        width: 720px;
+        @include font(opensans-extrabold);
+        font-size: 48px;
+        line-height: 60px;
+        color: var(--color-white);
+
+        &-sup {
+            @include font(sourcesans-regular);
+        }
+    }
+
+    &__subtitle {
+        margin-top: 24px;
+        width: 480px;
+        @include font(opensans-bold);
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.4px;
+        color: var(--color-white);
+
+        &-sup {
+            top: 0;
+        }
+    }
+
+    &__text {
+        margin-top: 15px;
+        @include font(opensans-regular);
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--color-white);
+
+        &-sup {
+            @include font(sourcesans-bold);
+        }
+    }
+
+    &__button {
+        margin-top: 49px;
+        margin-left: 3px;
+        width: 290px;
+        height: 80px;
+        background: linear-gradient(180deg, var(--color-sandy-brown) 0%, var(--color-tango) 100%);
+        box-shadow: 0px 4px 0px var(--color-flame-pea), inset 0px 4px 20px var(--color-macaroni-cheese);
+        border-radius: 40px;
+        @include font(opensans-bold);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        color: var(--color-white);
+        text-shadow: 0px 1px 1px var(--color-mine-shaft-24);
+    }
+
+    &__image {
+        margin-top: 78px;
+        margin-left: 102px;
+    }
+}
