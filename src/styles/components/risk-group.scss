@@ -6,23 +6,51 @@
         position: absolute;
         top: 120px;
         right: 0;
-        width: 1098px;
+        width: 57%;
         height: 805px;
         background: var(--color-white);
         box-shadow: 0px 2px 48px var(--color-midnight-6);
         border-radius: 30px 0px 0px 30px;
+
+        @include resolution(desktop) {
+            top: 750px;
+            width: 90%;
+        }
+
+        @include resolution(small-desktop) {
+            height: 900px;
+        }
+
+        @include resolution(big-tablet) {
+            top: 820px;
+        }
     }
 
     &__content {
         display: flex;
         justify-content: space-between;
         margin-bottom: 300px;
+
+        @include resolution(desktop) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__info {
         margin-top: 292px;
         margin-right: 88px;
         width: 53.5%;
+
+        @include resolution(desktop) {
+            width: 70%;
+            margin-top: 200px;
+            margin-right: 0;
+        }
+
+        @include resolution(tablet) {
+            width: 100%;
+        }
     }
 
     &__title-info {
@@ -30,6 +58,10 @@
         font-size: 22px;
         line-height: 30px;
         color: var(--color-midnight);
+
+        @include resolution(big-mobile) {
+            font-size: 18px;
+        }
     }
 
     &__subtitle {
@@ -42,16 +74,40 @@
         &-sup {
             @include font(sourcesans-regular);
         }
+
+        @include resolution(big-mobile) {
+            font-size: 16px;
+        }
     }
 
     &__card {
         margin-top: 30px;
         padding: 32px;
+
+        @include resolution(desktop) {
+            padding: 50px;
+        }
+
+        @include resolution(tablet) {
+            padding: 32px;
+        }
     }
 
     &__bullet {
         position: relative;
         margin-top: 200px;
+
+        @include resolution(desktop) {
+            width: 90%;
+        }
+
+        @include resolution(small-desktop) {
+            width: 80%;
+        }
+
+        @include resolution(tablet) {
+            width: 100%;
+        }
     }
 
     &__title-bullet {
@@ -65,6 +121,18 @@
         &-sup {
             @include font(sourcesans-regular);
         }
+
+        @include resolution(tablet) {
+            font-size: 20px;
+        }
+
+        @include resolution(big-mobile) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 366px) {
+            font-size: 16px;
+        }
     }
 
     &__images {
@@ -73,7 +141,45 @@
     }
 
     &__image {
+        width: 181px;
+        height: 496px;
+        background: url('./../assets/icons/arc.svg') no-repeat;
+        background-size: 100% 100%;
         margin-top: 125px;
+
+        @include resolution(desktop) {
+            margin-top: 100px;
+        }
+
+        @media (max-width: 1450px) {
+            margin-top: 125px;
+        }
+
+        @include resolution(small-desktop) {
+            height: 600px;
+            background: url('./../assets/icons/arc2.svg') no-repeat;
+            background-size: 100% 100%;
+        }
+
+        @media (max-width: 924px) {
+            margin-top: 155px;
+        }
+
+        @include resolution(tablet) {
+            margin-top: 125px;
+        }
+
+        @media (max-width: 632px) {
+            margin-top: 155px;
+        }
+
+        @include resolution(big-mobile) {
+            height: 840px;
+            width: 115px;
+            background: url('./../assets/icons/arc3.svg') no-repeat;
+            background-size: 100% 100%;
+            margin-top: 135px;
+        }
     }
 
     &__icons {
@@ -84,6 +190,37 @@
         flex-direction: column;
         justify-content: space-between;
         height: 544px;
+
+        @include resolution(desktop) {
+            top: 75px;
+        }
+
+        @media (max-width: 1450px) {
+            top: 101px;
+        }
+
+        @include resolution(small-desktop) {
+            height: 615px;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 924px) {
+            margin-top: 45px;
+        }
+
+        @include resolution(tablet) {
+            margin-top: 15px;
+        }
+
+        @media (max-width: 632px) {
+            margin-top: 45px;
+        }
+
+        @include resolution(big-mobile) {
+            left: 10px;
+            height: 780px;
+            margin-top: 60px;
+        }
     }
 
     &__icon {
@@ -97,6 +234,10 @@
 
         &:nth-child(2), &:nth-child(3), &:nth-child(4) {
             margin-left: 84px;
+
+            @include resolution(big-mobile) {
+                margin-left: 50px;
+            }
         }
     }
 
@@ -107,6 +248,14 @@
         justify-content: space-between;
         height: 544px;
         margin-top: 40px;
+
+        @include resolution(small-desktop) {
+            height: 644px;
+        }
+
+        @include resolution(big-mobile) {
+            height: 844px;
+        }
     }
 
     &__item {
@@ -116,12 +265,41 @@
         height: 80px;
         list-style: none;
         background: url('./../assets/img/fade_arrow.png') 100% no-repeat;
+        background-size: 100% 100%;
+
+        @include resolution(desktop) {
+            width: 100%;
+        }
+
+        @include resolution(small-desktop) {
+            height: 100px;
+        }
+
+        @include resolution(big-mobile) {
+            height: 140px;
+        }
 
         &:nth-child(1), &:nth-child(5) {
             width: 700px;
 
+            @include resolution(desktop) {
+                width: 100%;
+            }
+
             .risk-group__text {
                 margin-left: 112px;
+
+                @include resolution(desktop) {
+                    margin-left: 160px;
+                }
+
+                @include resolution(small-desktop) {
+                    margin-left: 140px;
+                }
+
+                @include resolution(big-mobile) {
+                    margin-left: 100px;
+                }
             }
         }
     }
@@ -136,6 +314,29 @@
         &-sup {
             @include font(sourcesans-regular);
         }
+
+        @include resolution(desktop) {
+            margin-left: 250px;
+            margin-right: 50px;
+        }
+
+        @include resolution(small-desktop) {
+            margin-left: 230px;
+        }
+
+        @include resolution(big-tablet) {
+            font-size: 16px;
+            margin-right: 20px;
+        }
+
+        @include resolution(tablet) {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        @include resolution(big-mobile) {
+            margin-left: 150px;
+        }
     }
 }
 
@@ -148,6 +349,10 @@
         font-size: 18px;
         line-height: 28px;
         color: var(--color-white);
+
+        @include resolution(big-mobile) {
+            font-size: 16px;
+        }
     }
 
     &__subtitle {
@@ -160,6 +365,10 @@
 
         &-sup {
             @include font(sourcesans-regular);
+        }
+
+        @include resolution(big-mobile) {
+            font-size: 16px;
         }
     }
 }
