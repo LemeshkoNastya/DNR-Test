@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     z-index: 100;
+    margin: 0;
+    padding: 0;
 }
 
 @import "./components/fonts";
@@ -26,6 +28,9 @@
     --color-flame-pea: #D76B30;
     --color-tango: #E86B2E;
     --color-mine-shaft-24: rgba(46, 46, 46, 0.24);
+    --color-midnight: #00233C;
+    --color-midnight-6: rgba(0, 35, 60, 0.06);
+    --color-outer-space: #2C393E;
 }
 a {
     text-decoration: none !important;
@@ -124,3 +129,4 @@ p {
 
 @import "./components/header";
 @import "./components/main";
+@import "./components/risk-group";

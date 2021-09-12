@@ -1,0 +1,165 @@
+.risk-group {
+    position: relative;
+    background: var(--color-white);
+
+    &__back {
+        position: absolute;
+        top: 120px;
+        right: 0;
+        width: 1098px;
+        height: 805px;
+        background: var(--color-white);
+        box-shadow: 0px 2px 48px var(--color-midnight-6);
+        border-radius: 30px 0px 0px 30px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 300px;
+    }
+
+    &__info {
+        margin-top: 292px;
+        margin-right: 88px;
+        width: 53.5%;
+    }
+
+    &__title-info {
+        @include font(opensans-extrabold);
+        font-size: 22px;
+        line-height: 30px;
+        color: var(--color-midnight);
+    }
+
+    &__subtitle {
+        margin-top: 16px;
+        @include font(opensans-regular);
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--color-outer-space);
+
+        &-sup {
+            @include font(sourcesans-regular);
+        }
+    }
+
+    &__card {
+        margin-top: 30px;
+        padding: 32px;
+    }
+
+    &__bullet {
+        position: relative;
+        margin-top: 200px;
+    }
+
+    &__title-bullet {
+        @include font(opensans-extrabold);
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        color: var(--color-mariner);
+        text-transform: uppercase;
+
+        &-sup {
+            @include font(sourcesans-regular);
+        }
+    }
+
+    &__images {
+        position: absolute;
+        top: 0;
+    }
+
+    &__image {
+        margin-top: 125px;
+    }
+
+    &__icons {
+        position: absolute;
+        top: 101px;
+        left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 544px;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        background: linear-gradient(79.62deg, var(--color-curious-blue) 29.11%, var(--color-mariner) 88.06%);
+
+        &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+            margin-left: 84px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 544px;
+        margin-top: 40px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 620px;
+        height: 80px;
+        list-style: none;
+        background: url('./../assets/img/fade_arrow.png') 100% no-repeat;
+
+        &:nth-child(1), &:nth-child(5) {
+            width: 700px;
+
+            .risk-group__text {
+                margin-left: 112px;
+            }
+        }
+    }
+
+    &__text {
+        margin-left: 116px;
+        @include font(opensans-bold);
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--color-outer-space);
+
+        &-sup {
+            @include font(sourcesans-regular);
+        }
+    }
+}
+
+.card {
+    background: linear-gradient(79.62deg, var(--color-curious-blue) 29.11%, var(--color-mariner) 88.06%);
+    border-radius: 30px;
+
+    &__title {
+        @include font(opensans-extrabold);
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--color-white);
+    }
+
+    &__subtitle {
+        margin-top: 10px;
+        width: 90%;
+        @include font(opensans-regular);
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--color-white);
+
+        &-sup {
+            @include font(sourcesans-regular);
+        }
+    }
+}
