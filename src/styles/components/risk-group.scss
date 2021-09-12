@@ -54,7 +54,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 300px;
+        margin-bottom: 200px;
 
         @include resolution(desktop) {
             flex-direction: column;

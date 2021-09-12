@@ -38,3 +38,27 @@
     src: local('SourceSansPro-Bold'), 
         url('../assets/fonts/SourceSansPro-Bold.ttf') format('ttf');
 }
+@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Play-Regular'), 
+        url('../assets/fonts/Play-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Raleway-Regular'), 
+        url('../assets/fonts/Raleway-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Raleway-Bold'), 
+        url('../assets/fonts/Raleway-Bold.ttf') format('ttf');
+}

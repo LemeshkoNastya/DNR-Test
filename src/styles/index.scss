@@ -31,6 +31,8 @@
     --color-midnight: #00233C;
     --color-midnight-6: rgba(0, 35, 60, 0.06);
     --color-outer-space: #2C393E;
+    --color-athens-gray: #F9FAFB;
+    --color-ebony-clay: #1F2937;
 }
 a {
     text-decoration: none !important;
@@ -130,3 +132,4 @@ p {
 @import "./components/header";
 @import "./components/main";
 @import "./components/risk-group";
+@import "./components/drug";
