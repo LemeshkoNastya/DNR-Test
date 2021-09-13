@@ -10,7 +10,7 @@ const displayNone = 'none';
 const displayFlex = 'flex';
 
 // Magic number
-const timeOpenVideo = 500;
+const timeOpenVideo = 600;
 
 // Variables
 const buttonOpenPopup = document.querySelector(classButtonMain);
@@ -53,4 +53,8 @@ buttonClosePopup.addEventListener('click', () => {
 
 buttonPopup.addEventListener('click', () => {
     playVideo();
+});
+
+video.addEventListener('pause', () => {
+    pausePopup.style.display = displayFlex;
 });
