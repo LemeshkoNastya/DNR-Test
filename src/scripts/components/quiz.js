@@ -11,6 +11,9 @@ const urlWrongCorner = 'src/assets/icons/corner-wrong.svg';
 const altImgCorner = 'icon corner';
 const classImgCorner = 'quiz__corner';
 
+// Magic number
+const timeOpenAnswer = 500;
+
 // Variable
 const questionsQuiz = document.querySelectorAll(classQuestions);
 
@@ -52,7 +55,7 @@ const openAnswer = (option, answer, correctQuestion) => {
     }
     setTimeout(() => {
         answer.classList.add(openAnswerQuestion)
-    }, 500);
+    }, timeOpenAnswer);
 }
 
 const closeAnswer = (options, answers) => {

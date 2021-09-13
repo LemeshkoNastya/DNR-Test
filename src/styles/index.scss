@@ -38,6 +38,8 @@
     --color-malachite: #14B83A;
     --color-cinderella: #FDDEE1;
     --color-crimson: #D10F22;
+    --color-bunting-64: rgba(21, 28, 83, 0.64);
+    --color-bunting-24: rgba(21, 28, 83, 0.24);
 }
 a {
     text-decoration: none !important;
@@ -139,6 +141,7 @@ p {
 @import "./components/risk-group";
 @import "./components/drug";
 @import "./components/quiz";
+@import "./components/popup";
 
 .sup {
     @include font(sourcesans-regular);

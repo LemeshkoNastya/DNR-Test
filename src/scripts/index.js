@@ -17,3 +17,4 @@ $(function() {
 
 import "./components/interactive";
 import "./components/quiz";
+import "./components/popup";

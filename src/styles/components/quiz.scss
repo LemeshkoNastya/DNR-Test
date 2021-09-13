@@ -68,6 +68,7 @@
         letter-spacing: 1.4px;
         font-feature-settings: 'pnum' on, 'lnum' on;
         color: var(--color-ebony-clay);
+        cursor: pointer;
 
         &_correct {
             @include font(raleway-bold);
