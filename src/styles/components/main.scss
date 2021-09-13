@@ -31,10 +31,6 @@
         line-height: 60px;
         color: var(--color-white);
 
-        &-sup {
-            @include font(sourcesans-regular);
-        }
-
         @include resolution(desktop) {
             font-size: 42px;
         }
@@ -75,10 +71,6 @@
         letter-spacing: 0.4px;
         color: var(--color-white);
 
-        &-sup {
-            top: 0;
-        }
-
         @include resolution(small-desktop) {
             margin-top: 50px;
             width: 470px;
@@ -111,10 +103,6 @@
         font-size: 24px;
         line-height: 32px;
         color: var(--color-white);
-
-        &-sup {
-            @include font(sourcesans-bold);
-        }
 
         @include resolution(small-desktop) {
             width: 425px;

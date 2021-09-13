@@ -96,10 +96,6 @@
         line-height: 28px;
         color: var(--color-outer-space);
 
-        &-sup {
-            @include font(sourcesans-regular);
-        }
-
         @include resolution(big-mobile) {
             font-size: 16px;
         }
@@ -142,10 +138,6 @@
         letter-spacing: 1px;
         color: var(--color-mariner);
         text-transform: uppercase;
-
-        &-sup {
-            @include font(sourcesans-regular);
-        }
 
         @include resolution(tablet) {
             font-size: 20px;
@@ -336,10 +328,6 @@
         line-height: 28px;
         color: var(--color-outer-space);
 
-        &-sup {
-            @include font(sourcesans-regular);
-        }
-
         @include resolution(desktop) {
             margin-left: 250px;
             margin-right: 50px;
@@ -391,10 +379,6 @@
         font-size: 18px;
         line-height: 28px;
         color: var(--color-white);
-
-        &-sup {
-            @include font(sourcesans-regular);
-        }
 
         @include resolution(big-mobile) {
             font-size: 16px;
