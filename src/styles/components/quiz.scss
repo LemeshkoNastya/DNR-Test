@@ -12,6 +12,10 @@
         line-height: 36px;
         text-transform: uppercase;
         color: var(--color-ebony-clay);
+
+        @include resolution(big-mobile) {
+            font-size: 24px;
+        }
     }
 
     &__item {
@@ -40,6 +44,10 @@
         letter-spacing: 0.4px;
         text-transform: uppercase;
         color: var(--color-ebony-clay);
+
+        @include resolution(big-mobile) {
+            font-size: 18px;
+        }
     }
 
     &__option {
@@ -47,7 +55,7 @@
         margin-top: 24px;
         background: var(--color-athens-gray);
         padding: 24px 40px;
-        @include font(raleway-bold);
+        @include font(raleway);
         font-size: 20px;
         line-height: 32px;
         letter-spacing: 1.4px;
@@ -55,11 +63,13 @@
         color: var(--color-ebony-clay);
 
         &_correct {
+            @include font(raleway-bold);
             background: var(--color-feta);
             color: var(--color-malachite);
         }
 
         &_wrong {
+            @include font(raleway-bold);
             background: var(--color-cinderella);
             color: var(--color-crimson);
         }
