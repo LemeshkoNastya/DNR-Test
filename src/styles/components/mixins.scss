@@ -62,6 +62,11 @@
         font-style: normal;
         font-weight: 400;
     }
+    @if $font == play-bold {
+        font-family: 'Play';
+        font-style: normal;
+        font-weight: 700;
+    }
     @if $font == raleway {
         font-family: 'Raleway';
         font-style: normal;

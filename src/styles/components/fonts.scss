@@ -47,6 +47,14 @@
         url('../assets/fonts/Play-Regular.ttf') format('ttf');
 }
 @font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Play-Bold'), 
+        url('../assets/fonts/Play-Bold.ttf') format('ttf');
+}
+@font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;

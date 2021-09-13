@@ -33,6 +33,11 @@
     --color-outer-space: #2C393E;
     --color-athens-gray: #F9FAFB;
     --color-ebony-clay: #1F2937;
+    --color-saffron: #F2B940;
+    --color-feta: #DDFBE4;
+    --color-malachite: #14B83A;
+    --color-cinderella: #FDDEE1;
+    --color-crimson: #D10F22;
 }
 a {
     text-decoration: none !important;
@@ -133,3 +138,8 @@ p {
 @import "./components/main";
 @import "./components/risk-group";
 @import "./components/drug";
+@import "./components/quiz";
+
+.sup {
+    @include font(sourcesans-regular);
+}

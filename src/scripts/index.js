@@ -15,12 +15,5 @@ $(function() {
 
 });
 
-const button = document.querySelector('.main-block__button');
-
-button.addEventListener('mouseenter', () => {
-  button.classList.add('main-block__button_active');
-});
-
-button.addEventListener('mouseleave', () => {
-  button.classList.remove('main-block__button_active');
-});
+import "./components/interactive";
+import "./components/quiz";
