@@ -3,7 +3,7 @@
 
     &__content {
         max-width: 920px;
-        margin-bottom: 126px;
+        margin-bottom: 61px;
     }
 
     &__title {
@@ -20,20 +20,27 @@
 
     &__item {
         margin-top: 40px;
+        margin-bottom: 65px;
     }
 
     &__badge {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: relative;
         width: 176px;
-        height: 36px;
-        background: var(--color-saffron);
-        @include font(play-bold);
-        font-size: 16px;
-        line-height: 20px;
-        text-transform: uppercase;
-        color: var(--color-ebony-clay);
+        border-top: 36px solid var(--color-saffron);
+        border-right: 6px solid transparent;
+        height: 0;
+
+        span {
+            position: absolute;
+            left: 16px;
+            bottom: 8px;
+            @include font(play-bold);
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            color: var(--color-ebony-clay);
+        }
     }
 
     &__question {
@@ -75,9 +82,6 @@
         }
 
         
-    }
-
-    &__corners {
     }
 
     &__corner {
